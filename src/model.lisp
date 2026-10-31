@@ -24,9 +24,13 @@
 (defparameter *scene-height* 800d0)
 (defparameter *board-size* 7)
 (defparameter *cell-size* 48d0)
-(defparameter *board-left* 27d0 "Left edge of column 0.")
 (defparameter *board-bottom* 168d0 "Centre of row 0 (bottom row).")
 (defparameter *board-gap* 4d0)
+(defparameter *board-left*
+  (/ (- *scene-width*
+        (+ (* *board-size* *cell-size*) (* (1- *board-size*) *board-gap*)))
+     2)
+  "Left edge of column 0, so the board sits centred in the scene.")
 (defparameter *disc-radius* 21d0)
 
 (defun cell-x (col)
