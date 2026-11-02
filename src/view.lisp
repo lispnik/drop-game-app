@@ -615,7 +615,7 @@
 ;;; ------------------------------------------------------------------
 ;;; autoplay, for watching without touching the screen
 ;;;
-;;;   SIMCTL_CHILD_DROP7_AUTOPLAY=1 xcrun simctl launch booted com.burnsidemk.drop7
+;;;   SIMCTL_CHILD_DROP7_AUTOPLAY=1 xcrun simctl launch booted com.burnsidemk.drop-game
 
 (defun autotap (x y)
   (tap-view-point (objc:invoke *scene* "convertPointToView:"

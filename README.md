@@ -68,7 +68,7 @@ tools/testflight.sh --validate   # build and validate, upload nothing
 Set in the simulator's environment at launch:
 
 ```sh
-SIMCTL_CHILD_DROP7_AUTOPLAY=1 xcrun simctl launch booted com.burnsidemk.drop7
+SIMCTL_CHILD_DROP7_AUTOPLAY=1 xcrun simctl launch booted com.burnsidemk.drop-game
 ```
 
 `DROP7_AUTOPLAY=1` plays by itself, `DROP7_SEED=n` starts with a fixed RNG

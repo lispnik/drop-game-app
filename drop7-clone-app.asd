@@ -20,8 +20,9 @@
                (:file "model")
                (:file "view"))
 
-  :bundle-identifier "com.burnsidemk.drop7"
+  :bundle-identifier "com.burnsidemk.drop-game"
   :bundle-name "Drop7"
+  :bundle-display-name "Drop Game"   ; the name under the home-screen icon
   :bundle-executable "drop7"
   :bundle-platforms #.(cond ((uiop:getenv "DROP7_DISTRIBUTION") '(:device))
                             ((uiop:getenv "IOS_SIGNING_IDENTITY") '(:simulator :device))
